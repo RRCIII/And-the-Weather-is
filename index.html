@@ -5,16 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Permissions-policy" content="interest-cohort=()">
 
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-
     <link rel="'stylesheet" href="./assets/css/style.css">
 
-    <title>Today's Weather</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
     <header>
-        <h1>W</h1>
+        <h1>Weather Dashboard</h1>
     </header>
-    
+    <div class="main container">
+        <aside>
+            <form class= "search-form">
+                <label for="city-name">
+                    <h2>Search for city:</h2>
+                </label>
+                <input id= "city-name" type="text" placeholder="Asheville">
+                <button id="search-btn" type="submit">Search</button> 
+            </form>
+            <hr>
+            <div class="cities-searched">
+                <!-- search history of the cities -->
+
+            </div>
+        </aside>
+        <section class="hide">
+            <div class="current-weather-container">
+                <!-- current weather container rendered w/o js. -->
+                <div class="current-weather-header">
+                    <h2><span id="current-city">Asheville</span> <span id="current-date"> (7/17/2023)</span><h2><span id="current-icon"></span></h2></h2>
+                </div>
+                <div class ="current-weather">
+                    <p id="current-temp">Temp: 72°F</p>
+                    <p id="currrent-wind">Wind: 4 mph</p>
+                    <p id="current-humidity">Humidity: 69 %</p>
+                </div>
+            <div>
+            <div class="next-five-days-container">
+                <h2>5-Day Forecast:</h2>
+                <div class="next-five-days">
+                 <!-- five day forcast rendred here -->
+                </div>
+
+            </div>
+
+        </section>
+    </div>
 </body>
 </html>
