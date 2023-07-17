@@ -146,3 +146,68 @@ section {
     font-size: 1.3rem;
 }
 
+/* MEDIA QUERY */
+@media screen and (max-width: 777px) {
+    body {
+        margin: 0;
+    }
+
+    header h1 {
+        margin: 0.6rem 0 0.6rem 0;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 60%;
+    }
+
+    aside h2 {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    aside .searched-cities {
+        display: none;
+    }
+
+    aside hr {
+        display: none;
+    }
+
+    section {
+        margin: 1rem 0 3rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .current-weather-container {
+        text-align: center;
+    }
+
+    .next-five-days-container h2 {
+        text-align: center;
+    }
+
+    .next-five-days {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .day {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
