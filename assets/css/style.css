@@ -38,4 +38,111 @@ header h1 {
     font-weight: 700;
 }
 
+/* Main Container */
+.main-container {
+    width: 100%;
+    display: flex;
+}
+/* Aside */
+aside{
+    width: 20%;
+    padding: 0 0.5rem;
+}
+
+aside h2 {
+     margin: 0.5rem 0;
+}
+
+aside input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+aside button {
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(118, 153, 235);
+    color: rgb(221, 221, 221);
+    padding: 0.5rem 0;
+    border-radius: 0.2rem;
+    border:none;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    transition: 0.15s ease-out;
+}
+
+aside button:hover{
+    color: #fff;
+}
+
+aside button:active {
+    transform: scale(0.98);
+}
+
+.searched-cities button {
+    background-color: rgb(173, 173, 173);
+    color: #000;
+    margin: 1rem 0 0;
+}
+
+/* section */
+section {
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* Current-Weather */
+.current-weather-container{
+    border: 1px solid #000;
+    padding: 0rem .3rem;
+}
+
+.current-weather-header {
+    display: flex;
+    align-items: center;
+}
+
+.current-weather p {
+    margin: 1.3rem 0;
+}
+
+#current-date {
+    margin-left: 0.1rem;
+}
+
+#current-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Next-Five-Days */
+.next-five-days-container {
+    width: 100%;
+}
+
+.next-five-days-container h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    color: #fff;
+    background-color: rgb(49, 53, 82);
+    padding: 0.3rem 0.3rem 0.5rem;
+    width: 18%;
+}
+
+.day p {
+    margin: 1rem 0;
+}
+
+#day-icon {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.3rem;
+}
 
