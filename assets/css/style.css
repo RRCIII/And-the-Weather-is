@@ -1,0 +1,41 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Universal */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+/* Hide class */
+.hide {
+    display: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background: linear-gradient(90deg, rgb(91, 91, 184), rgb(0, 0, 99));
+}
+
+header h1 {
+    margin: 0.6rem 0 0.6rem 20%;
+    font-weight: 700;
+}
+
+
