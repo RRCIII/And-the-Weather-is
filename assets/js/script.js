@@ -73,3 +73,75 @@ const fetchFiveDays = async(cityName) => {
 
     console.log(data);
 };
+
+//add case sensitivity to city name; capitilize the first letter of the city
+const caseSensitivity = (cityName) => {
+    let updateCity = cityName.toLowerCase().split(" ");
+    let returnCity = '';
+
+    for(let i = 0; i < updateCity.length; i++) {
+        updateCity[i] = updateCity[i][0].toUppercase() + updateCity[i].slice(1);
+        returnCity += " " + updateCity[i];
+    }
+    return returnCity.trim();
+};
+
+//add city to search history 
+const addCityToList = (city) => {
+    let newCity = caseSensitivity(city);
+
+    let exist = false;
+
+    //if searched city is already in the cityList array, exist is equal to true
+    for (let c of cityList) {
+        if (c === newCity) {
+            exist = true
+        }
+    }
+
+    //if city has not been searched before
+    if (!exist) {
+        //add city to the front of the array
+        cityList.unshift(newCity)
+
+        const cityBtn = document.createElement('button')
+        cityBtn.classList.add('city-btn');
+        cityBtn.innerText = `${cityList[0]}`;
+        searchedCities.prepend(cityBtn);
+    } else {
+        return
+    }
+
+    // if the list of cities are > 8, then remove the last child from the element
+    if(cityList.length > 8) {
+        let nodes = document.querySelectorAll('.city-btn');
+        let last = nodes[nodes.length -1];
+        last.remove();
+    }
+
+    // set local storage w/ cityList array
+    localStorage.setItem('cities', JSON.stringify(cityList));
+
+    //addEventListner to each button w/ sity that was searched
+    document.querySelectorAll('.city-btn').forEach(btn => {
+        btn.removeEventListener('click', fetchData)
+        btn.addEventListener('click', (e) =>{
+            fetchData(e.target.innerText)
+        })
+    })
+};
+
+//get local storage array from previous searches 
+const getLocalStorage = () => {
+    const storageList = JSON.parse(localStorage.getItem('cities'))
+
+    // if local storage is empty this will return function as empty
+    if (!storageList) {
+        return false
+    }
+
+    //local storage cities, saved back into the inital citylist array
+    cityList = storageList
+    
+    addstorageList()
+} 
