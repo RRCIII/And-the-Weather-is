@@ -36,7 +36,7 @@ Colleagues at UNC Fullstack Bootcamp- Chapel Hill
 
 ## Screenshot 
 
-![screenshot](./assets/css/images/screenshot.png)
+![C:\Users\rando\And-the-Weather-is\assets\css\images\Weather-Dashboard.png](./assets/css/images/Weather-Dashboard.png)
 
 
 
