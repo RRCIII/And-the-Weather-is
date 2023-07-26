@@ -148,8 +148,8 @@ const getLocalStorage = () => {
 
 //add cities to initial storageList upon initial render 
 const addstorageList = () => {
-    if (cityList. length > 0) {
-        cityList.foreach(city => {
+    if (cityList.length > 0) {
+        cityList.forEach(city => {
             const cityBtn = document.createElement('button')
             cityBtn.classList.add('city-btn')
             cityBtn.innerText = `${city}`
