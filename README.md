@@ -31,10 +31,12 @@ THEN I am again presented with current and future conditions for that city
 
 Colleagues at UNC Fullstack Bootcamp- Chapel Hill
 
+## Published URL
+
 
 ## Screenshot 
 
 ![screenshot](./assets/css/images/screenshot.png)
 
-## Published URL
+
 

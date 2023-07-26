@@ -43,7 +43,6 @@ header h1 {
     width: 100%;
     display: flex;
 }
-
 /* Aside */
 aside{
     width: 20%;
@@ -95,7 +94,6 @@ section {
     width: 70%;
     margin-top: 1rem;
     margin-left: 1rem;
-    
 }
 
 /* Current-Weather */
@@ -132,10 +130,11 @@ section {
     margin: 1rem 0;
 }
 
-.next-five-days{
+.next-five-days {
     display: flex;
     justify-content: space-between;
 }
+
 
 .day {
     color: #fff;
