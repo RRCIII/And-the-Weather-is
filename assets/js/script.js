@@ -47,7 +47,7 @@ const fetchData = (cityName) => {
 
 // call OpenWeatherMap API for five day/three hour weather data utilizing async() await
 const fetchFiveDays = async(cityName) => {
-    const requestURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=${APIkey}`;
+    const requestURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=${APIkey}`;
 
     const response = await fetch(requestURL);
 
