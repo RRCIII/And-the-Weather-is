@@ -125,7 +125,7 @@ const addCityToList = (city) => {
     //addEventListner to each button w/ sity that was searched
     document.querySelectorAll('.city-btn').forEach(btn => {
         btn.removeEventListener('click', fetchData)
-        btn.addEventListener('click', (e) =>{
+        btn.addEventListener('click', (e) => {
             fetchData(e.target.innerText)
         })
     })
@@ -144,4 +144,32 @@ const getLocalStorage = () => {
     cityList = storageList
     
     addstorageList()
-} 
+};
+
+//add cities to initial storageList upon initial render 
+const addstorageList = () => {
+    if (cityList. length > 0) {
+        cityList.foreach(city => {
+            const cityBtn = document.createElement('button')
+            cityBtn.classList.add('city-btn')
+            cityBtn.innerText = `${city}`
+            searchedCities.append(cityBtn)
+        })
+    } else if (city.length > 8) {
+        let nodes = document.querySelectorAll('city-btn')
+        let last = nodes[nodes.length - 1]
+        last.remove()
+        cityList.pop()
+    } else {
+        return
+    }
+
+    document.querySelectorAll('.city-btn').foreach(btn => {
+        btn.removeEventListener('click', fetchData)
+        btn.addEventListener('click', (e) => {
+            fetchData(e.target.innerText)    
+        })
+    })
+};
+
+
