@@ -172,4 +172,27 @@ const addstorageList = () => {
     })
 };
 
+// on initial search, fetch data from OpenWeatherMap. clear the input box after searching. 
+const onFormSubmit = (event) => {
+    event.preventDefault()
 
+    city = cityName.value; 
+
+    cityName.value = '';
+
+
+    // if a city is searched, the call fetcData. Otherwise, alert and stop function
+    if(city) {
+        fetchData(city)
+    } else {
+        alert("Please enter a city")
+        return
+    }
+};
+
+//addEventListner on thr search form 
+searchform.addEventListener('submit', onFormSubmit);
+
+//get local storage from the start 
+
+getLocalStorage();
