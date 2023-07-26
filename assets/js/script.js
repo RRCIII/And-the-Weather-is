@@ -80,7 +80,7 @@ const caseSensitivity = (cityName) => {
     let returnCity = '';
 
     for(let i = 0; i < updateCity.length; i++) {
-        updateCity[i] = updateCity[i][0].toUppercase() + updateCity[i].slice(1);
+        updateCity[i] = updateCity[i][0].toUpperCase() + updateCity[i].slice(1);
         returnCity += " " + updateCity[i];
     }
     return returnCity.trim();
