@@ -164,7 +164,7 @@ const addstorageList = () => {
         return
     }
 
-    document.querySelectorAll('.city-btn').foreach(btn => {
+    document.querySelectorAll('.city-btn').forEach(btn => {
         btn.removeEventListener('click', fetchData)
         btn.addEventListener('click', (e) => {
             fetchData(e.target.innerText)    
