@@ -1,7 +1,8 @@
+## Weather Dashboard
+
 ## Description 
 
-
-
+The Weather Dashboard allows users to search for any city and display results that reflect the current weather and five day forecast. This is made possible via two seperate API calls fetched from the OpenWeatherMap. 
 
 ## User Story
 
@@ -25,7 +26,15 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
+
+## Resources 
+
+Colleagues at UNC Fullstack Bootcamp- Chapel Hill
+
+
 ## Screenshot 
+
+![screenshot](./assets/css/images/screenshot.png)
 
 ## Published URL
 

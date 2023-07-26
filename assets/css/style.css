@@ -43,6 +43,7 @@ header h1 {
     width: 100%;
     display: flex;
 }
+
 /* Aside */
 aside{
     width: 20%;
@@ -83,7 +84,7 @@ aside button:active {
     transform: scale(0.98);
 }
 
-.searched-cities button {
+.cities-searched button {
     background-color: rgb(173, 173, 173);
     color: #000;
     margin: 1rem 0 0;
@@ -94,6 +95,7 @@ section {
     width: 70%;
     margin-top: 1rem;
     margin-left: 1rem;
+    
 }
 
 /* Current-Weather */
@@ -126,6 +128,11 @@ section {
 }
 
 .next-five-days-container h2 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.next-five-days{
     display: flex;
     justify-content: space-between;
 }
@@ -171,7 +178,7 @@ section {
         text-align: center;
     }
 
-    aside .searched-cities {
+    aside .cities-searched {
         display: none;
     }
 
