@@ -32,7 +32,7 @@ THEN I am again presented with current and future conditions for that city
 Colleagues at UNC Fullstack Bootcamp- Chapel Hill
 
 ## Published URL
-
+https://rrciii.github.io/And-the-Weather-is/
 
 ## Screenshot 
 
